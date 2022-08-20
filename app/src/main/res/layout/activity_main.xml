@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="302dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="55dp"
+        android:background="#BFED5449"
+        android:onClick="fahToCel"
+        android:text="Fahrenheit to Celsius"
+        android:textColor="#000000"
+        android:textColorHighlight="#ED5449"
+        android:textColorHint="#ED5449"
+        android:textColorLink="#ED5449"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button1" />
+
+    <TextView
+        android:id="@+id/outputText"
+        android:layout_width="390dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Temperature Converter"
+        android:textColor="#F44336"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="274dp"
+        android:layout_height="226dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="83dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outputText"
+        app:srcCompat="@drawable/main" />
+
+    <EditText
+        android:id="@+id/inputText"
+        android:layout_width="207dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="103dp"
+        android:ems="10"
+        android:hint="Type here..."
+        android:gravity="center"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textColorHint="#AC5050"
+        android:textSize="24sp"
+        android:background="@drawable/input_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="302dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="102dp"
+        android:layout_marginEnd="55dp"
+        android:background="#BFED5449"
+        android:foregroundTint="#ED5449"
+        android:onClick="celToFah"
+        android:text="Celsius to Fahrenheit"
+        android:textColor="#000000"
+        android:textColorHighlight="#ED5449"
+        android:textColorHint="#ED5449"
+        android:textColorLink="#ED5449"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
