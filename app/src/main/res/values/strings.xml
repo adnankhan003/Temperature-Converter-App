@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Temperature Converter App</string>
+
+    <string name="developers_contact">Developers Contact</string>
+    <string name="settings">Settings</string>
+    <string name="email">Email: adnankhannew777@gmail.com</string>
+    <string name="name">Name: Adnan Khan</string>
+    <string name="address">Address: Akola, Maharashtra</string>
+    <string name="request">*for any query or complaints, please let me know through email*</string>
 </resources>
